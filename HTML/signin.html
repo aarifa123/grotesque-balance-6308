@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+</head>
+<style>
+#signin{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width:70%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+   margin-top: 30px;
+    background:#696969
+}
+#signup form{
+   font-size: large;
+   width:100px
+}
+
+body{
+    background-color:#d3d3d3 ;
+}
+#email,#password,#submit{
+   
+    height: 30px;
+}
+a button{
+    background-color: black;
+    color: aqua;
+    width:50px;
+    height:30px;
+
+}
+
+    </style>
+<body>
+    <div class="nav">
+        <a href="./signindetails.html"><button>Signup</button></a>
+        <a href="./signin.html"><button>SignIn</button></a>
+        <a href="./index.html">
+
+            <button>
+                Return
+            </button>
+            </a>
+      </div>
+      <div id="signin">
+        <h1 id="heading">Please Enter Your Details</h1>
+        <form id="form">
+          <input type="email" id="email" placeholder="Email"/>
+          <input type="password" id="password"placeholder="Password"/>
+          <input type="submit" value="Submit" />
+         
+        </form>
+      </div>
+</body>
+<script>
+    
+    let heading=document.getElementById("heading")
+    let form=document.getElementById("form")
+    let email=document.getElementById("email")
+    let password=document.getElementById("password")
+    
+    
+    
+    let data=JSON.parse(localStorage.getItem("account-data"))
+    // console.log(data[0].name)
+     
+    form.addEventListener("submit",function(e){
+      
+    e.preventDefault()
+    // console.log(data)
+      data.forEach(function(element,i){
+      //  console.loge.preventDefault()
+      // let userdata=JSON.parse(localStorage.getItem("account-data"));
+      // if(userdata===null){
+      //   userdata=[]
+      // }
+      
+      console.log(element)
+    // (element.email)
+    // email.value===element.email
+    // password.value===element.password
+      if(email.value===element.email&&password.value===element.password){
+        heading.innerText="Sign in Successful✅"
+        heading.style="color:white"
+      }
+       
+      else{
+        heading.innerText="Wrong Credentials❌"
+        heading.style="color:tomato"
+    
+    }
+        
+    })
+       })
+    
+    
+      </script>
+</html>

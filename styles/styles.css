@@ -11,11 +11,17 @@ background-color:#343434;
 padding: 10px;
 
  }
+ /* .nav-2nd{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+ } */
 #logo-div{
    
 margin-left: 5px;
 background-color:#343434  ;
-width:70%
+width:80%
 }
 #triplogo{
    height: 30px;
@@ -24,6 +30,11 @@ width:70%
    float:left;
    margin-top: 5px;
   
+}
+
+.dropbtn{
+  font-size: 30px;
+  margin-left: 20px;
 }
 #user-icon nav{
     color: azure;
@@ -36,7 +47,7 @@ width:70%
  
     margin-left: 20px;
 
-color:#ddd
+color:red
 
    
 }
@@ -111,33 +122,166 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .burger{
+    width:30px;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: auto;
+   margin-right: 0;
+    font-size: 30px;
+    float:right
+  }
   
-#banner1{
+#banner-parent{
   
-  height: 500px;
+  height: 700px;
 width: 100%;
-  background-image: url("https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/Pimal2-1.2d5d237dbd32.jpg");
-   /* height: 100vh;
-   width: 100%; */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-repeat: no-repeat;
-   background-size: 100% 500px;
-   
-
-}
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/Pimal2-1.2d5d237dbd32.jpg");
  
-/* Import 
-/* @media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
+ 
+  display:grid;
+  
+   
+   background-repeat: no-repeat;
+   background-size: 100% 700px;
+}
+#banner1{
+ margin-top: 50px;
+ width:60%;
+ margin: auto;
+ /* margin-bot; */
+}
+  
+.banner2-parent{
+  margin-top: 0;
+  
+}
+.banner2-parent h2{
+
+width: 100%;
+}
+.wrapper{
+  display: flex;
+  overflow:hidden;
+  
+  
+}
+.carousel{
+  display: flex;
+  /* overflow: hidden; */
+  position: relative;
+  text-align: center;
+  color:white;
+  font-family: fantasy;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: black;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.carousel img{
+opacity: 0.7;
+
+  width:200px;
+  height: 200px;
+}
+#headinput{
+    grid-template-columns: repeat(2,1fr);
   }
+  
+  .wrapper{
+    overflow-wrap: normal;
+  }
+/* .carousel p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 5em;
+  font-family :Quicksand, sans-serif;
+  
+
+} */
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+/* margin-bottom: 50px; */
+
+ .centered p{
+  
+  margin-bottom: 120px;
+} 
+  .search{
+  
+  color: gray;
+
+  font-size: larger;
+  background-color: aliceblue;
+  background: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/google/350/magnifying-glass-tilted-right_1f50d.png") no-repeat right;
+  background-size: 20px;
+ 
+} 
+/* .date{
+  color: gray;
+  background-color: white;
+  font-size: larger;
+width:50%
+}  */
+
+ .guest{
+  color: gray;
+  background-color: white;
+  font-size: larger;
+  width: 100%;
+} 
+#headinput{
+
+  background-color:white; 
+  padding: 50px;
+opacity: 0.9;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+
+}
+ #search-btn{
+  width:100%;
+  font-size: larger;
+  color: black;
+  background-color:#0000FF;
+
+}  
+
+
+/* mediaquery area */
+ @media screen and (max-width: 900px) {
+  #headinput{
+    grid-template-columns: repeat(1,1fr);
+  }
+ 
 }
 
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
+@media screen and (max-width: 550px) and (min-width:200px) {
+  #headinput{
+    margin-left: 0px;
+    grid-template-columns: repeat(1,1fr);
   }
-} */
+
+
+
+
+}
+body{
+ background-color: #FAF9F6;
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#signup{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width:50%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+   margin-top: 30px;
+    background:#696969
+}
+#signup form{
+   /* font-size: large; */
+   width:100px
+}
+
+body{
+    background-color:#d3d3d3 ;
+}
+#name,#email,#password,#submit{
+   
+    height: 30px;
+}
+a button{
+    background-color: black;
+    color: aqua;
+    width:50px;
+    height:30px;
+
+}
+
+    </style>
+</head>
+<body>
+    
+   
+
+    </a>
+   <div class="nav">
+  <a ><button>signup</button></a>
+  <a href="./signin.html"><button>Signin</button></a>
+  <a href="./index.html">
+
+    <button>
+        Return
+    </button>
+    </a>
+</div>
+<div id="signup">
+  <h1>Please Enter Your Details</h1>
+  <form id="form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password"  id="password" placeholder="Password">
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</div>
+
+</body>
+<script>
+    let form=document.getElementById("form")
+   
+  let data=[]
+  form.addEventListener("submit",function(e){
+  e.preventDefault()
+  let name=document.getElementById("name").value   
+  let email=document.getElementById("email").value  
+  let password=document.getElementById("password").value 
+  
+  let userdetails={
+    name,email,password
+  }
+  
+  data.push(userdetails)
+  localStorage.setItem("account-data",JSON.stringify(data))
+  
+  console.log(data)
+  
+  })
+  </script>
+</html>
