@@ -66,7 +66,114 @@ margin-bottom: 20px;
 flex-direction: row; 
 padding: 30px;
 }
-@media screen and (max-width: 900px) {
+#down-container{
+    width:90%;
+    margin: auto;
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+    /* display: flex;  */
+    color: gray;
+  }
+  #bigdiv1{
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height:300px
+  }
+  #bigdiv2{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    height: 300px;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  #sub1,#sub2{
+    
+    /* padding: 30px; */
+    /* padding-top: 30px;
+    padding-left: 50px; */
+    width:100%;
+    
+     /* border: 4px solid red; */
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);  */
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    /* flex-wrap: wrap; */ 
+    margin-right: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+  #sub1 img,#sub2 img{
+    width: 50px;
+   display: block;
+    margin: auto;
+  
+  }
+  /* #sub1>div,#sub2>div{
+  
+    margin-top: 30px;
+    margin-left: 30px;
+  } */
+  #bigdiv1>h2,#bigdiv2>h2{
+    
+    margin-top: 30px;
+  }
+  #bigdiv1>button,#bigdiv2>button{
+    background-color:#1e87f0;  
+    color: #fff;
+    border: 1px solid transparent;
+    height: 30px;
+  }
+
+.downbanparent{
+   gap:30px;
+   width:100%;
+   height: 21vh;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:10px 30px 10px 30px;
+  
+}
+.content-wrapper{
+   width:200px;
+   height:100% ;
+   /* padding: 30px; */
+   margin-left: 30px;
+   background-color: black;
+}
+.content-wrapper img{
+    width:100%;
+    opacity: 0.5;
+    
+   
+}
+
+.text-wrapper{
+    color: white;
+    width:100%;
+    position: relative;
+    margin-top: -40%;
+}
+
+.text-wrapper h3{
+    text-align: center;
+margin-bottom: 20px;
+  }
+
+#h5ina{
+    margin-left: 30px;
+}
+
+
+  @media screen and (max-width: 900px) {
     #container-middle{
         flex-direction: column;
     }
@@ -74,12 +181,29 @@ padding: 30px;
         margin-top: 50px;
         grid-template-columns: repeat(2,1fr) 
     }
+    #bigcard2 img{
+        width:400px;
+        height: 100%;}
     #bigcard1{
         grid-template-columns: repeat(2,1fr); 
     }
+    #down-container{
+       grid-template-columns: repeat(1,1fr);
+    }
+    #sub1,#sub2{
+       grid-template-columns: repeat(2,1fr);
+    } 
+    .downbanparent{
+        grid-template-columns: repeat(2,1fr);
    
-  }
-  
+    } 
+    #h5ina{
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 0%;
+        
+    }
+}
   @media screen and (max-width: 550px) and (min-width:200px) {
     #container-middle{
         flex-direction: column;
@@ -91,5 +215,19 @@ padding: 30px;
     #bigcard1{
         grid-template-columns: repeat(1,1fr); 
     }
+    #down-container{
+        grid-template-columns: repeat(1,1fr);
     }
-  
+    #sub1,#sub2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .downbanparent{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    /* #h5ina{
+        text-align: center;
+        margin-top: 500px;
+        margin-bottom: 0%;
+        
+    } */
+    }

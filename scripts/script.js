@@ -66,7 +66,55 @@ h2:"Pristine Bay Mahabalipuram",
 p:" Tripvillas In Thenpattinam, Tamil Nadu  "
 }
 
-]
+],
+down1:[
+
+{
+   pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/growth.svg",
+   details:"Low Cost High Appreciation"
+}
+
+,
+
+{
+   pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/maids.svg",
+   details:"Professionally well Managed"
+},
+{
+   pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/give-money.svg",
+   details:"Guaranteed To Produce Income"
+},
+{
+   pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/plan.svg",
+   details:"We Designed Floor Plans"
+}
+
+],
+down2:[
+
+   {
+      pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/network.svg",
+      details:"Get Bookings From 100+ Websites"
+   }
+   
+   ,
+   
+   {
+      pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/layout.svg",
+      details:"One Dashboard - Total Control"
+   },
+   {
+      pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/flash.svg",
+      details:"Instant Book Or Request To Book"
+   },
+   {
+      pic:"https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/smartphone-call.svg",
+      details:"Both iOS & Android App Available."
+   }
+   
+   ]
+
+
           
 }
 
@@ -126,3 +174,88 @@ card2.append(photo,insidecard)
 
 
 }
+
+
+
+const swiper = new Swiper('.swiper', {
+  
+   loop: true,
+ 
+   
+   pagination: {
+     el: '.swiper-pagination',
+   },
+ 
+  
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+ 
+   
+   
+ });
+
+
+let down_container=document.getElementById("down-container")
+let sub1=document.getElementById("sub1")
+ let bigdiv1=document.getElementById("bigdiv1")
+ down1(arr.down1)
+ function down1(data){
+   
+   data.forEach(function(element){
+let div1=document.createElement("div")
+let downimg=document.createElement("img")
+downimg.src=element.pic
+let details=document.createElement("p")
+details.innerText=element.details
+
+
+div1.append(downimg,details)
+sub1.append(div1)
+
+
+   })
+ }
+
+
+
+ 
+ let title=document.createElement("h2")
+   title.innerText="Holiday Home Investment Opportunities"
+   let butt=document.createElement("button")
+butt.innerText="EXPLORE INVESTMENT OPPORTUNITIES"
+bigdiv1.append(title,sub1,butt)
+down_container.append(bigdiv1)
+
+
+
+
+let bigdiv2=document.getElementById("bigdiv2")
+let sub2=document.getElementById("sub2")
+ down2(arr.down2)
+ function down2(data){
+   
+   data.forEach(function(element){
+let div1=document.createElement("div")
+let downimg=document.createElement("img")
+downimg.src=element.pic
+let details=document.createElement("p")
+details.innerText=element.details
+
+
+div1.append(downimg,details,)
+sub2.append(div1)
+
+   })
+ }
+ 
+let title2 =document.createElement("h2")
+   title2.innerText="Are You A Holiday Home Owner/Manager? "
+   let butt2=document.createElement("button")
+butt2.innerText="LIST YOUR PROPERTY"
+bigdiv2.append(title2,sub2,butt2)
+
+
+
+down_container.append(bigdiv2)
