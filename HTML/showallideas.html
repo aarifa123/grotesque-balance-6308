@@ -5,6 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+      #galleryparent{
+        gap:0;
+       
+        display:grid;
+      grid-template-columns: repeat(5,1fr);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      div.gallery {
+       
+      margin: 5px;
+        /* bordr: 1px solid #ccc; */
+      float: left;
+      width: 250px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+      }
+      
+      div.gallery>h4{
+        color:gray;
+        margin-top:10px;
+        margin-bottom: 10px;
+      }
+
+
+      div.gallery:hover {
+      border: 1px solid #777;
+      }
+      
+      div.gallery img {
+      width: 100%;
+      height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+       
+      }
+      @media screen and (max-width: 900px) {
+        #galleryparent{
+          grid-template-columns: repeat(3,1fr);
+        }
+        
+}
+
+@media screen and (max-width: 550px) and (min-width:200px) {
+  #galleryparent{
+          grid-template-columns: repeat(1,1fr);
+        }
+        div.gallery{
+          width:250px;
+        }
+}
+      </style>
+
+
     <link rel="stylesheet" href="..\styles\styles.css">
     <link rel="stylesheet" href="..\styles\banner2.css">
     <script src="https://kit.fontawesome.com/2168af67a3.js" crossorigin="anonymous"></script>
@@ -78,7 +136,146 @@
     </div>
     </a>
     </div>
+    
+    
+
+
+
+
+
+
+
+
+<h1 style="margin-bottom: 20px;margin-top: 20px;color:gray">Explore Some Of the Vacation Ideas</h1>
+    
+      
+     <div id="galleryparent">
+      
+      <div class="gallery">
+        <h4>Phuket's Best Pool Villas</h4>
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/26263307/rsz_malee_sala_mob_thumbnail.jpeg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Have you got a bunch of friends that you hang out with regularly and wished you could vacation together? Our Private pool villas in Phuket are a perfect match.</div>
+      </div>
+      
+      <div class="gallery">
+        <h4>Coorg Homestays</h4>
         
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/19458182/pf-thumb5_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Coorg is known for the hospitality of people and beautiful scenery. This is one of the best destinations for nature lovers and romantics in India. </div>
+      </div>
+      
+      <div class="gallery">
+        <h4>Family Bungalows in Lonavala</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/20706451/Picture018-1_mob_thumbnail.jpeg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Lonavala and Khandala are your best bets if you want to not drive too far from Mumbai yet experience the pleasant climate and greenery of the surrounding hills.</div>
+      </div>
+      
+      <div class="gallery">
+        <h4>Bali Family Villas</h4>
+       
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/84724691/bali-villa-marene-evening-lights-around-pool-4_mob_thumbnail.jpeg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Bali - an island with a population of about 4mn people, is also home to Indonesia's Hindu minority. It offers a unique blend of tourism which has a cultural side</div>
+      </div>
+      
+
+      <div class="gallery">
+        <h4>Sri Lanka - Rural solitude and luxury combined</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/30531257/1_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Sri Lanka combines the rural authenticity of India with it's own truly unique beauty, hospitality towards all cultures and a substantial number of western quality homes that have been built by international Sri Lankans as well as expat. </div>
+      </div>
+      <div class="gallery">
+        <h4>Apartments near the Louvre in Paris</h4>
+        
+          <img src="https://pix10.agoda.net/geo/poi/7570/2_7570_03.jpg?ca=7&ce=1&s=1024x768" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">ake in the romance, history and art of Paris by staying right around the corner from the Louvre - home to the most famous woman on the planet - Mona Lisa. </div>
+      </div>
+      <div class="gallery">
+        <h4>Cheap & Affordable Homestays & Resorts in Sakleshpur</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/26491889/1-1_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Best deals for Homestays and Resorts in Sakleshpur for Vacations, Short break, Weekend Stay.  </div>
+      </div>  
+
+      <div class="gallery">
+        <h4>Luxury Vacation in Goa</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/13879959/1_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Goa, an exotic location where the romance of past and the vibrance of the present meet... a dream location for every one all over the globe!!  </div>
+      </div>
+       <div class="gallery">
+        <h4>Top Homestays and resorts in Chikmagalur</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/10044090/rooms-first_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Tripvillas Top Homestays and resorts in Chikmagalur. Escape to the picturesque mountains of Mullayanagiri for a blissful & memorable holiday with family and friends.  </div>
+      </div>
+      <div class="gallery">
+        <h4>Pension Homes in the Philippines</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/21261503/233311110_2327557435f6482e89fe64aeda87596d6c31e1b9_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">The Philippines is our pick for the next new hip and exotic destination in Asia. With a primarily English speaking population, it is easy for travelers to blend in and stay for extended periods </div>
+      </div>
+
+      <div class="gallery">
+        <h4>Beach Properties in India</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/15323035/highland_1_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">India's beaches have something to offer for everyone- From the very commercial beaches around Calangute in Goa to pristine beaches further to the North and to the southern tip of Goa. </div>
+      </div>
+
+      <div class="gallery">
+        <h4>Indian Hill Station Homes</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/38628342/The_Morning_After_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">The Hill stations of India are a British colonial legacy - these cities were built when the Indian summers got a bit too warm for the British Officers and so they could retreat into the relative comfort of the hills.  </div>
+      </div>
+      <div class="gallery">
+        <h4>Costa Rican Luxury Homes</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/12524072/146c025ddd3b11e89edc0a8e1b1ce4da_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Costa Rica is known for many things like beaches, beautiful nature and diving. Explore some of our holiday home options for your next trip and enjoy the best of this unique mixture of adventure and luxury!  </div>
+      </div>
+
+       <div class="gallery">
+        <h4>Australia's best Bed and Breakfasts</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/23550793/vista-apts-farmland-views2_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Australia is world famous for its natural wonders and wide open spaces, its beaches, deserts, "the bush", and "the Outback". </div>
+      </div>
+      <div class="gallery">
+        <h4>Coorg Homestays</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/19458182/pf-thumb5_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Coorg is known for the hospitality of people and beautiful scenery. This is one of the best destinations for nature lovers and romantics in India. </div>
+      </div>
+      <div class="gallery">
+        <h4>Assorted European Homes</h4>
+        
+          <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/13845091/IMG_1831_mob_thumbnail.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">While we're primarily focussed on Asia, we couldn't help but list some of these very beautiful homes in Europe whose owners contacted us. . </div>
+      </div>
+      
+    </div>
+
+
+
     
 </body>
 </html>

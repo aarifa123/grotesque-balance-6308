@@ -1,3 +1,9 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
 #bigcard1{
     
    padding: 70px;
@@ -126,7 +132,7 @@ padding: 30px;
     
     margin-top: 30px;
   }
-  #bigdiv1>button,#bigdiv2>button{
+  #bigdiv1>a>button,#bigdiv2>a>button{
     background-color:#1e87f0;  
     color: #fff;
     border: 1px solid transparent;
@@ -171,6 +177,74 @@ margin-bottom: 20px;
 #h5ina{
     margin-left: 30px;
 }
+.footcont{
+  /* background-color: red; */
+  margin-top: 40px;
+  margin: auto;
+  max-width: 1170px;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display:flex;
+  flex-wrap:wrap ;
+}
+.footer{
+  background-color: #FFFEFA;
+  padding: 70px 0px;
+}
+.footer-col{
+  /* width:25%; */
+  padding: 0 15px;
+}
+.footer-col>h4{
+  font-size: 18px;
+  /* text-align: center; */
+  color:#555555;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+ 
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color:#A9A9A9; 
+  height:2px;
+  box-sizing: border-box;
+  width:50px
+}
+
+.footer-col ul li:not(:last-child){
+  /* margin: 10px; */
+}
+ 
+ .footer-col ul li a{
+  /* font-size: 18px; */
+  text-transform: capitalize;
+  color:#A9A9A9;
+  font-weight: 300;
+  display: block; 
+  text-decoration: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   @media screen and (max-width: 900px) {
@@ -203,6 +277,8 @@ margin-bottom: 20px;
         margin-bottom: 0%;
         
     }
+
+
 }
   @media screen and (max-width: 550px) and (min-width:200px) {
     #container-middle{
