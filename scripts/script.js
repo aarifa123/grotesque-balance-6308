@@ -225,7 +225,11 @@ sub1.append(div1)
    title.innerText="Holiday Home Investment Opportunities"
    let butt=document.createElement("button")
 butt.innerText="EXPLORE INVESTMENT OPPORTUNITIES"
-bigdiv1.append(title,sub1,butt)
+let page=document.createElement("a")
+page.href="./form.html"
+// page.innerText="page"
+page.append(butt)
+bigdiv1.append(title,sub1,page)
 down_container.append(bigdiv1)
 
 
@@ -254,7 +258,11 @@ let title2 =document.createElement("h2")
    title2.innerText="Are You A Holiday Home Owner/Manager? "
    let butt2=document.createElement("button")
 butt2.innerText="LIST YOUR PROPERTY"
-bigdiv2.append(title2,sub2,butt2)
+let page2=document.createElement("a")
+page2.href="./form.html"
+// page.innerText="page"
+page2.append(butt2)
+bigdiv2.append(title2,sub2,page2)
 
 
 
